@@ -59,4 +59,3 @@ report = {'文件数': len(docs), '中文专题文档': len([p for p in docs if 
 print(json.dumps(report, ensure_ascii=False, indent=2))
 if errors:
     raise SystemExit(1)
-
