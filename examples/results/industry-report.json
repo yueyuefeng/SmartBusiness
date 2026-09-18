@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "EN-C01",
+      "title": "商业储能与电费诊断",
+      "synthetic": true,
+      "market": "US_STATE_PENDING",
+      "notice": "合成案例：未实施真实营销、合同、交付、收款或认证。",
+      "technical": {
+        "feasible": true,
+        "violations": [],
+        "notes": [
+          "INCOMPLETE_BILLING_PERIOD"
+        ],
+        "battery_end_kwh": "100",
+        "thermal_end_kwh": "0",
+        "observed_energy_bill": "56.85",
+        "baseline_energy_bill": "64",
+        "energy_savings": "7.15",
+        "demand_savings": null,
+        "annual_return": null,
+        "trace": [
+          {
+            "interval": 0,
+            "battery_kwh": "145",
+            "thermal_kwh": "0",
+            "import_kw": "150",
+            "export_kw": "0"
+          },
+          {
+            "interval": 1,
+            "battery_kwh": "100",
+            "thermal_kwh": "0",
+            "import_kw": "139.5",
+            "export_kw": "0"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "id": "EN-C01-supplier-a",
+          "issues": []
+        },
+        {
+          "id": "EN-C01-supplier-b",
+          "issues": [
+            "EVIDENCE_MISSING:quote"
+          ]
+        }
+      ],
+      "qualified_resources": [
+        "EN-C01-supplier-a"
+      ],
+      "finance": {
+        "currency": "USD",
+        "net_revenue": "120000",
+        "gross_profit": "21000",
+        "contribution_profit": "12000",
+        "status": "estimate",
+        "missing_costs": [],
+        "scope": "经营口径，非净利润；不证明真实交易已发生"
+      },
+      "publication_gate_passed": false,
+      "publication_allowed": false,
+      "cycle_stage": "resource_verified",
+      "blockers": [
+        "CONTENT_REVIEW_PENDING",
+        "MARKET_PROFILE_PENDING"
+      ],
+      "simulation_events": [
+        {
+          "id": "EN-C01-e1",
+          "stage": "resource_verified",
+          "refs": [
+            "synthetic://resource-proof"
+          ]
+        }
+      ],
+      "trace": {
+        "signal": "EN-C01-signal",
+        "requirement": "EN-C01-requirement",
+        "business_model": "EN-C01-model",
+        "campaign": "EN-C01-campaign",
+        "quote": "EN-C01-quote",
+        "order": "EN-C01-order",
+        "delivery": "EN-C01-delivery",
+        "profit": "EN-C01-profit",
+        "review": "EN-C01-review"
+      }
+    },
+    {
+      "id": "EN-H01",
+      "title": "家庭光储与关键负载备电",
+      "synthetic": true,
+      "market": "EU_MEMBER_PENDING",
+      "notice": "合成案例：未实施真实营销、合同、交付、收款或认证。",
+      "technical": {
+        "feasible": true,
+        "violations": [],
+        "notes": [
+          "BACKUP_CHECK_ASSUMES_REVIEWED_ISLAND_TOPOLOGY",
+          "INCOMPLETE_BILLING_PERIOD"
+        ],
+        "battery_end_kwh": "8",
+        "thermal_end_kwh": "2",
+        "observed_energy_bill": "0.228",
+        "baseline_energy_bill": "1",
+        "energy_savings": "0.772",
+        "demand_savings": null,
+        "annual_return": null,
+        "trace": [
+          {
+            "interval": 0,
+            "battery_kwh": "11.6",
+            "thermal_kwh": "2",
+            "import_kw": "0",
+            "export_kw": "0"
+          },
+          {
+            "interval": 1,
+            "battery_kwh": "8",
+            "thermal_kwh": "2",
+            "import_kw": "0.76",
+            "export_kw": "0"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "id": "EN-H01-supplier-a",
+          "issues": []
+        },
+        {
+          "id": "EN-H01-supplier-b",
+          "issues": [
+            "EVIDENCE_MISSING:quote"
+          ]
+        }
+      ],
+      "qualified_resources": [
+        "EN-H01-supplier-a"
+      ],
+      "finance": {
+        "currency": "EUR",
+        "net_revenue": "9000",
+        "gross_profit": "2300",
+        "contribution_profit": "1700",
+        "status": "estimate",
+        "missing_costs": [],
+        "scope": "经营口径，非净利润；不证明真实交易已发生"
+      },
+      "publication_gate_passed": false,
+      "publication_allowed": false,
+      "cycle_stage": "resource_verified",
+      "blockers": [
+        "CONTENT_REVIEW_PENDING",
+        "MARKET_PROFILE_PENDING"
+      ],
+      "simulation_events": [
+        {
+          "id": "EN-H01-e1",
+          "stage": "resource_verified",
+          "refs": [
+            "synthetic://resource-proof"
+          ]
+        }
+      ],
+      "trace": {
+        "signal": "EN-H01-signal",
+        "requirement": "EN-H01-requirement",
+        "business_model": "EN-H01-model",
+        "campaign": "EN-H01-campaign",
+        "quote": "EN-H01-quote",
+        "order": "EN-H01-order",
+        "delivery": "EN-H01-delivery",
+        "profit": "EN-H01-profit",
+        "review": "EN-H01-review"
+      }
+    },
+    {
+      "id": "EN-H02",
+      "title": "家庭光储热泵与储热协同",
+      "synthetic": true,
+      "market": "EU_MEMBER_PENDING",
+      "notice": "合成案例：未实施真实营销、合同、交付、收款或认证。",
+      "technical": {
+        "feasible": true,
+        "violations": [],
+        "notes": [
+          "BACKUP_CHECK_ASSUMES_REVIEWED_ISLAND_TOPOLOGY",
+          "INCOMPLETE_BILLING_PERIOD"
+        ],
+        "battery_end_kwh": "8",
+        "thermal_end_kwh": "2",
+        "observed_energy_bill": "0.228",
+        "baseline_energy_bill": "1",
+        "energy_savings": "0.772",
+        "demand_savings": null,
+        "annual_return": null,
+        "trace": [
+          {
+            "interval": 0,
+            "battery_kwh": "11.6",
+            "thermal_kwh": "6",
+            "import_kw": "0",
+            "export_kw": "0"
+          },
+          {
+            "interval": 1,
+            "battery_kwh": "8",
+            "thermal_kwh": "2",
+            "import_kw": "0.76",
+            "export_kw": "0"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "id": "EN-H02-supplier-a",
+          "issues": []
+        },
+        {
+          "id": "EN-H02-supplier-b",
+          "issues": [
+            "EVIDENCE_MISSING:quote"
+          ]
+        }
+      ],
+      "qualified_resources": [
+        "EN-H02-supplier-a"
+      ],
+      "finance": {
+        "currency": "EUR",
+        "net_revenue": "16000",
+        "gross_profit": "3600",
+        "contribution_profit": "2500",
+        "status": "estimate",
+        "missing_costs": [],
+        "scope": "经营口径，非净利润；不证明真实交易已发生"
+      },
+      "publication_gate_passed": false,
+      "publication_allowed": false,
+      "cycle_stage": "resource_verified",
+      "blockers": [
+        "CONTENT_REVIEW_PENDING",
+        "MARKET_PROFILE_PENDING"
+      ],
+      "simulation_events": [
+        {
+          "id": "EN-H02-e1",
+          "stage": "resource_verified",
+          "refs": [
+            "synthetic://resource-proof"
+          ]
+        }
+      ],
+      "trace": {
+        "signal": "EN-H02-signal",
+        "requirement": "EN-H02-requirement",
+        "business_model": "EN-H02-model",
+        "campaign": "EN-H02-campaign",
+        "quote": "EN-H02-quote",
+        "order": "EN-H02-order",
+        "delivery": "EN-H02-delivery",
+        "profit": "EN-H02-profit",
+        "review": "EN-H02-review"
+      }
+    },
+    {
+      "id": "MO-E01",
+      "title": "城市电动自行车整车销售与服务",
+      "synthetic": true,
+      "market": "CN_CITY_PENDING",
+      "notice": "合成案例：未实施真实营销、合同、交付、收款或认证。",
+      "technical": {
+        "route": "bicycle_review",
+        "technical_ready": true,
+        "market_ready": false,
+        "issues": [
+          "MARKET_PROFILE_PENDING"
+        ],
+        "range_low_km": "33.75",
+        "range_high_km": "67.5",
+        "scope": "工况估算与资料筛选，不是续航保证或道路准入结论"
+      },
+      "resources": [
+        {
+          "id": "MO-E01-supplier-a",
+          "issues": []
+        },
+        {
+          "id": "MO-E01-supplier-b",
+          "issues": [
+            "EVIDENCE_MISSING:quote"
+          ]
+        }
+      ],
+      "qualified_resources": [
+        "MO-E01-supplier-a"
+      ],
+      "finance": {
+        "currency": "CNY",
+        "net_revenue": "4999",
+        "gross_profit": "1949",
+        "contribution_profit": "1299",
+        "status": "estimate",
+        "missing_costs": [],
+        "scope": "经营口径，非净利润；不证明真实交易已发生"
+      },
+      "publication_gate_passed": false,
+      "publication_allowed": false,
+      "cycle_stage": "resource_verified",
+      "blockers": [
+        "CONTENT_REVIEW_PENDING",
+        "MARKET_PROFILE_PENDING"
+      ],
+      "simulation_events": [
+        {
+          "id": "MO-E01-e1",
+          "stage": "resource_verified",
+          "refs": [
+            "synthetic://resource-proof"
+          ]
+        }
+      ],
+      "trace": {
+        "signal": "MO-E01-signal",
+        "requirement": "MO-E01-requirement",
+        "business_model": "MO-E01-model",
+        "campaign": "MO-E01-campaign",
+        "quote": "MO-E01-quote",
+        "order": "MO-E01-order",
+        "delivery": "MO-E01-delivery",
+        "profit": "MO-E01-profit",
+        "review": "MO-E01-review"
+      }
+    },
+    {
+      "id": "MO-K01",
+      "title": "自行车电助力改装服务评估",
+      "synthetic": true,
+      "market": "US_STATE_PENDING",
+      "notice": "合成案例：未实施真实营销、合同、交付、收款或认证。",
+      "technical": {
+        "route": "conversion_review",
+        "technical_ready": false,
+        "market_ready": false,
+        "issues": [
+          "EVIDENCE_MISSING:frame",
+          "MARKET_PROFILE_PENDING"
+        ],
+        "range_low_km": "22.5",
+        "range_high_km": "45",
+        "scope": "工况估算与资料筛选，不是续航保证或道路准入结论"
+      },
+      "resources": [
+        {
+          "id": "MO-K01-supplier-a",
+          "issues": []
+        },
+        {
+          "id": "MO-K01-supplier-b",
+          "issues": [
+            "EVIDENCE_MISSING:quote"
+          ]
+        }
+      ],
+      "qualified_resources": [
+        "MO-K01-supplier-a"
+      ],
+      "finance": {
+        "currency": "USD",
+        "net_revenue": "1200",
+        "gross_profit": "300",
+        "contribution_profit": "120",
+        "status": "estimate",
+        "missing_costs": [],
+        "scope": "经营口径，非净利润；不证明真实交易已发生"
+      },
+      "publication_gate_passed": false,
+      "publication_allowed": false,
+      "cycle_stage": "resource_verified",
+      "blockers": [
+        "CONTENT_REVIEW_PENDING",
+        "EVIDENCE_MISSING:frame",
+        "MARKET_PROFILE_PENDING"
+      ],
+      "simulation_events": [
+        {
+          "id": "MO-K01-e1",
+          "stage": "resource_verified",
+          "refs": [
+            "synthetic://resource-proof"
+          ]
+        }
+      ],
+      "trace": {
+        "signal": "MO-K01-signal",
+        "requirement": "MO-K01-requirement",
+        "business_model": "MO-K01-model",
+        "campaign": "MO-K01-campaign",
+        "quote": "MO-K01-quote",
+        "order": "MO-K01-order",
+        "delivery": "MO-K01-delivery",
+        "profit": "MO-K01-profit",
+        "review": "MO-K01-review"
+      }
+    },
+    {
+      "id": "MO-M01",
+      "title": "电动摩托经销与交付",
+      "synthetic": true,
+      "market": "EU_MEMBER_PENDING",
+      "notice": "合成案例：未实施真实营销、合同、交付、收款或认证。",
+      "technical": {
+        "route": "motorcycle_review",
+        "technical_ready": true,
+        "market_ready": false,
+        "issues": [
+          "MARKET_PROFILE_PENDING"
+        ],
+        "range_low_km": "42.5",
+        "range_high_km": "72.85714285714285714285714286",
+        "scope": "工况估算与资料筛选，不是续航保证或道路准入结论"
+      },
+      "resources": [
+        {
+          "id": "MO-M01-supplier-a",
+          "issues": []
+        },
+        {
+          "id": "MO-M01-supplier-b",
+          "issues": [
+            "EVIDENCE_MISSING:quote"
+          ]
+        }
+      ],
+      "qualified_resources": [
+        "MO-M01-supplier-a"
+      ],
+      "finance": {
+        "currency": "EUR",
+        "net_revenue": "5000",
+        "gross_profit": "1250",
+        "contribution_profit": "700",
+        "status": "estimate",
+        "missing_costs": [],
+        "scope": "经营口径，非净利润；不证明真实交易已发生"
+      },
+      "publication_gate_passed": false,
+      "publication_allowed": false,
+      "cycle_stage": "resource_verified",
+      "blockers": [
+        "CONTENT_REVIEW_PENDING",
+        "MARKET_PROFILE_PENDING"
+      ],
+      "simulation_events": [
+        {
+          "id": "MO-M01-e1",
+          "stage": "resource_verified",
+          "refs": [
+            "synthetic://resource-proof"
+          ]
+        }
+      ],
+      "trace": {
+        "signal": "MO-M01-signal",
+        "requirement": "MO-M01-requirement",
+        "business_model": "MO-M01-model",
+        "campaign": "MO-M01-campaign",
+        "quote": "MO-M01-quote",
+        "order": "MO-M01-order",
+        "delivery": "MO-M01-delivery",
+        "profit": "MO-M01-profit",
+        "review": "MO-M01-review"
+      }
+    }
+  ]
+}

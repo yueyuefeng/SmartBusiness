@@ -1,0 +1,151 @@
+test_commercial_observation_not_annualized (test_industry_scenarios.ScenarioTests.test_commercial_observation_not_annualized) ... ERROR
+test_complete_synthetic_cycle_requires_all_gates (test_industry_scenarios.ScenarioTests.test_complete_synthetic_cycle_requires_all_gates) ... ERROR
+test_conversion_missing_frame_is_blocked (test_industry_scenarios.ScenarioTests.test_conversion_missing_frame_is_blocked) ... ERROR
+test_expired_offer_cannot_be_selected (test_industry_scenarios.ScenarioTests.test_expired_offer_cannot_be_selected) ... ERROR
+test_household_costs_include_installation_and_warranty (test_industry_scenarios.ScenarioTests.test_household_costs_include_installation_and_warranty) ... ERROR
+test_missing_resource_evidence_stops_at_opportunity (test_industry_scenarios.ScenarioTests.test_missing_resource_evidence_stops_at_opportunity) ... ERROR
+test_real_transactions_not_accepted_by_demo_runner (test_industry_scenarios.ScenarioTests.test_real_transactions_not_accepted_by_demo_runner) ... ERROR
+test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) ... 
+  test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='EN-C01') ... ERROR
+  test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='EN-H01') ... ERROR
+  test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='EN-H02') ... ERROR
+  test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='MO-E01') ... ERROR
+  test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='MO-K01') ... ERROR
+  test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='MO-M01') ... ERROR
+
+======================================================================
+ERROR: test_commercial_observation_not_annualized (test_industry_scenarios.ScenarioTests.test_commercial_observation_not_annualized)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 28, in test_commercial_observation_not_annualized
+    result = run_case(load("EN-C01"))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_complete_synthetic_cycle_requires_all_gates (test_industry_scenarios.ScenarioTests.test_complete_synthetic_cycle_requires_all_gates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 50, in test_complete_synthetic_cycle_requires_all_gates
+    result = run_case(data)
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_conversion_missing_frame_is_blocked (test_industry_scenarios.ScenarioTests.test_conversion_missing_frame_is_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 34, in test_conversion_missing_frame_is_blocked
+    result = run_case(load("MO-K01"))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_expired_offer_cannot_be_selected (test_industry_scenarios.ScenarioTests.test_expired_offer_cannot_be_selected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 38, in test_expired_offer_cannot_be_selected
+    result = run_case(load("EN-H01"))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_household_costs_include_installation_and_warranty (test_industry_scenarios.ScenarioTests.test_household_costs_include_installation_and_warranty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 23, in test_household_costs_include_installation_and_warranty
+    result = run_case(load("EN-H01"))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_missing_resource_evidence_stops_at_opportunity (test_industry_scenarios.ScenarioTests.test_missing_resource_evidence_stops_at_opportunity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 64, in test_missing_resource_evidence_stops_at_opportunity
+    self.assertEqual(run_case(data)["cycle_stage"], "opportunity")
+                     ~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_real_transactions_not_accepted_by_demo_runner (test_industry_scenarios.ScenarioTests.test_real_transactions_not_accepted_by_demo_runner)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 59, in test_real_transactions_not_accepted_by_demo_runner
+    run_case(data)
+    ~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='EN-C01')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 16, in test_six_cases_run_and_remain_explicitly_synthetic
+    result = run_case(load(file.stem))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='EN-H01')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 16, in test_six_cases_run_and_remain_explicitly_synthetic
+    result = run_case(load(file.stem))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='EN-H02')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 16, in test_six_cases_run_and_remain_explicitly_synthetic
+    result = run_case(load(file.stem))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='MO-E01')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 16, in test_six_cases_run_and_remain_explicitly_synthetic
+    result = run_case(load(file.stem))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='MO-K01')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 16, in test_six_cases_run_and_remain_explicitly_synthetic
+    result = run_case(load(file.stem))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+======================================================================
+ERROR: test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) (case='MO-M01')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_scenarios.py", line 16, in test_six_cases_run_and_remain_explicitly_synthetic
+    result = run_case(load(file.stem))
+  File "<repo>\industry_pilots\runner.py", line 3, in run_case
+    raise NotImplementedError("案例编排待实现")
+NotImplementedError: 案例编排待实现
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.012s
+
+FAILED (errors=13)

@@ -1,0 +1,101 @@
+test_agent_case_read_and_finance_simulation_end_to_end (test_http_api.HttpApiTests.test_agent_case_read_and_finance_simulation_end_to_end) ... ERROR
+test_agent_role_cannot_be_overridden_by_payload (test_http_api.HttpApiTests.test_agent_role_cannot_be_overridden_by_payload) ... ERROR
+test_api_requires_credentials (test_http_api.HttpApiTests.test_api_requires_credentials) ... ERROR
+test_browser_cookie_and_content_security_policy (test_http_api.HttpApiTests.test_browser_cookie_and_content_security_policy) ... ERROR
+test_browser_mutation_requires_same_origin (test_http_api.HttpApiTests.test_browser_mutation_requires_same_origin) ... ERROR
+test_foreign_host_and_origin_rejected (test_http_api.HttpApiTests.test_foreign_host_and_origin_rejected) ... ERROR
+test_malformed_and_oversized_body_rejected (test_http_api.HttpApiTests.test_malformed_and_oversized_body_rejected) ... ERROR
+test_static_path_traversal_blocked (test_http_api.HttpApiTests.test_static_path_traversal_blocked) ... ERROR
+
+======================================================================
+ERROR: test_agent_case_read_and_finance_simulation_end_to_end (test_http_api.HttpApiTests.test_agent_case_read_and_finance_simulation_end_to_end)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_http_api.py", line 16, in setUp
+    self.server = make_server(self.service, self.token)
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\smartbusiness\server.py", line 4, in make_server
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_agent_role_cannot_be_overridden_by_payload (test_http_api.HttpApiTests.test_agent_role_cannot_be_overridden_by_payload)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_http_api.py", line 16, in setUp
+    self.server = make_server(self.service, self.token)
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\smartbusiness\server.py", line 4, in make_server
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_api_requires_credentials (test_http_api.HttpApiTests.test_api_requires_credentials)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_http_api.py", line 16, in setUp
+    self.server = make_server(self.service, self.token)
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\smartbusiness\server.py", line 4, in make_server
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_browser_cookie_and_content_security_policy (test_http_api.HttpApiTests.test_browser_cookie_and_content_security_policy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_http_api.py", line 16, in setUp
+    self.server = make_server(self.service, self.token)
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\smartbusiness\server.py", line 4, in make_server
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_browser_mutation_requires_same_origin (test_http_api.HttpApiTests.test_browser_mutation_requires_same_origin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_http_api.py", line 16, in setUp
+    self.server = make_server(self.service, self.token)
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\smartbusiness\server.py", line 4, in make_server
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_foreign_host_and_origin_rejected (test_http_api.HttpApiTests.test_foreign_host_and_origin_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_http_api.py", line 16, in setUp
+    self.server = make_server(self.service, self.token)
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\smartbusiness\server.py", line 4, in make_server
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_malformed_and_oversized_body_rejected (test_http_api.HttpApiTests.test_malformed_and_oversized_body_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_http_api.py", line 16, in setUp
+    self.server = make_server(self.service, self.token)
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\smartbusiness\server.py", line 4, in make_server
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_static_path_traversal_blocked (test_http_api.HttpApiTests.test_static_path_traversal_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_http_api.py", line 16, in setUp
+    self.server = make_server(self.service, self.token)
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\smartbusiness\server.py", line 4, in make_server
+    raise NotImplementedError
+NotImplementedError
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.163s
+
+FAILED (errors=8)

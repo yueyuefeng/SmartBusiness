@@ -1,0 +1,404 @@
+test_backup_cannot_count_unavailable_grid_or_unproven_solar (test_industry_pilots.EnergyTests.test_backup_cannot_count_unavailable_grid_or_unproven_solar) ... ERROR
+test_complete_period_uses_actual_peak_including_charging (test_industry_pilots.EnergyTests.test_complete_period_uses_actual_peak_including_charging) ... ERROR
+test_efficiency_outside_bounds_rejected (test_industry_pilots.EnergyTests.test_efficiency_outside_bounds_rejected) ... ERROR
+test_energy_reserve_is_not_free_capacity (test_industry_pilots.EnergyTests.test_energy_reserve_is_not_free_capacity) ... ERROR
+test_export_limit_checked (test_industry_pilots.EnergyTests.test_export_limit_checked) ... ERROR
+test_heat_cannot_be_created_without_input (test_industry_pilots.EnergyTests.test_heat_cannot_be_created_without_input) ... ERROR
+test_incomplete_billing_period_cannot_claim_demand_savings (test_industry_pilots.EnergyTests.test_incomplete_billing_period_cannot_claim_demand_savings) ... ERROR
+test_invalid_numeric_inputs_rejected (test_industry_pilots.EnergyTests.test_invalid_numeric_inputs_rejected) ... 
+  test_invalid_numeric_inputs_rejected (test_industry_pilots.EnergyTests.test_invalid_numeric_inputs_rejected) (value='NaN') ... ERROR
+  test_invalid_numeric_inputs_rejected (test_industry_pilots.EnergyTests.test_invalid_numeric_inputs_rejected) (value='Infinity') ... ERROR
+  test_invalid_numeric_inputs_rejected (test_industry_pilots.EnergyTests.test_invalid_numeric_inputs_rejected) (value='-1') ... ERROR
+test_invalid_schedule_does_not_produce_savings (test_industry_pilots.EnergyTests.test_invalid_schedule_does_not_produce_savings) ... ERROR
+test_losses_and_cycle_energy_are_accounted (test_industry_pilots.EnergyTests.test_losses_and_cycle_energy_are_accounted) ... ERROR
+test_power_constraint_independent_of_capacity (test_industry_pilots.EnergyTests.test_power_constraint_independent_of_capacity) ... ERROR
+test_simultaneous_charge_discharge_rejected (test_industry_pilots.EnergyTests.test_simultaneous_charge_discharge_rejected) ... ERROR
+test_thermal_and_electric_ledgers_are_separate (test_industry_pilots.EnergyTests.test_thermal_and_electric_ledgers_are_separate) ... ERROR
+test_unequal_end_energy_does_not_claim_comparable_savings (test_industry_pilots.EnergyTests.test_unequal_end_energy_does_not_claim_comparable_savings) ... ERROR
+test_conversion_requires_donor_frame_evidence (test_industry_pilots.MobilityTests.test_conversion_requires_donor_frame_evidence) ... ERROR
+test_higher_power_bicycle_not_silently_relabelled (test_industry_pilots.MobilityTests.test_higher_power_bicycle_not_silently_relabelled) ... ERROR
+test_kit_document_for_other_revision_is_not_valid (test_industry_pilots.MobilityTests.test_kit_document_for_other_revision_is_not_valid) ... ERROR
+test_motorcycle_has_separate_route (test_industry_pilots.MobilityTests.test_motorcycle_has_separate_route) ... ERROR
+test_range_is_interval_not_guaranteed_mileage (test_industry_pilots.MobilityTests.test_range_is_interval_not_guaranteed_mileage) ... ERROR
+test_range_under_required_duty_cycle_is_flagged (test_industry_pilots.MobilityTests.test_range_under_required_duty_cycle_is_flagged) ... ERROR
+test_unknown_market_never_becomes_road_approval (test_industry_pilots.MobilityTests.test_unknown_market_never_becomes_road_approval) ... ERROR
+test_zero_consumption_is_invalid (test_industry_pilots.MobilityTests.test_zero_consumption_is_invalid) ... ERROR
+test_business_cycle_idempotent_replay (test_industry_pilots.SharedTests.test_business_cycle_idempotent_replay) ... ERROR
+test_business_cycle_requires_order_and_evidence (test_industry_pilots.SharedTests.test_business_cycle_requires_order_and_evidence) ... ERROR
+test_content_edit_or_market_unknown_blocks_publication (test_industry_pilots.SharedTests.test_content_edit_or_market_unknown_blocks_publication) ... ERROR
+test_cross_currency_addition_requires_explicit_conversion (test_industry_pilots.SharedTests.test_cross_currency_addition_requires_explicit_conversion) ... ERROR
+test_duplicate_cost_id_is_rejected (test_industry_pilots.SharedTests.test_duplicate_cost_id_is_rejected) ... ERROR
+test_estimates_are_not_actual_profit (test_industry_pilots.SharedTests.test_estimates_are_not_actual_profit) ... ERROR
+test_expired_resource_evidence_is_not_verified (test_industry_pilots.SharedTests.test_expired_resource_evidence_is_not_verified) ... ERROR
+test_missing_cost_never_becomes_zero (test_industry_pilots.SharedTests.test_missing_cost_never_becomes_zero) ... ERROR
+test_profit_refunds_and_costs_have_distinct_roles (test_industry_pilots.SharedTests.test_profit_refunds_and_costs_have_distinct_roles) ... ERROR
+test_wrong_market_evidence_does_not_match (test_industry_pilots.SharedTests.test_wrong_market_evidence_does_not_match) ... ERROR
+
+======================================================================
+ERROR: test_backup_cannot_count_unavailable_grid_or_unproven_solar (test_industry_pilots.EnergyTests.test_backup_cannot_count_unavailable_grid_or_unproven_solar)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 105, in test_backup_cannot_count_unavailable_grid_or_unproven_solar
+    self.assertIn("BACKUP_ENERGY", evaluate_energy(spec)["violations"])
+                                   ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_complete_period_uses_actual_peak_including_charging (test_industry_pilots.EnergyTests.test_complete_period_uses_actual_peak_including_charging)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 63, in test_complete_period_uses_actual_peak_including_charging
+    result = evaluate_energy(spec)
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_efficiency_outside_bounds_rejected (test_industry_pilots.EnergyTests.test_efficiency_outside_bounds_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 119, in test_efficiency_outside_bounds_rejected
+    evaluate_energy(spec)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_energy_reserve_is_not_free_capacity (test_industry_pilots.EnergyTests.test_energy_reserve_is_not_free_capacity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 74, in test_energy_reserve_is_not_free_capacity
+    self.assertIn("BATTERY_BOUNDS", evaluate_energy(spec)["violations"])
+                                    ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_export_limit_checked (test_industry_pilots.EnergyTests.test_export_limit_checked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 85, in test_export_limit_checked
+    self.assertIn("EXPORT_LIMIT", evaluate_energy(spec)["violations"])
+                                  ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_heat_cannot_be_created_without_input (test_industry_pilots.EnergyTests.test_heat_cannot_be_created_without_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 100, in test_heat_cannot_be_created_without_input
+    self.assertIn("THERMAL_BALANCE", evaluate_energy(spec)["violations"])
+                                     ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_incomplete_billing_period_cannot_claim_demand_savings (test_industry_pilots.EnergyTests.test_incomplete_billing_period_cannot_claim_demand_savings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 58, in test_incomplete_billing_period_cannot_claim_demand_savings
+    self.assertIsNone(evaluate_energy(energy())["demand_savings"])
+                      ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_invalid_numeric_inputs_rejected (test_industry_pilots.EnergyTests.test_invalid_numeric_inputs_rejected) (value='NaN')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 113, in test_invalid_numeric_inputs_rejected
+    evaluate_energy(spec)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_invalid_numeric_inputs_rejected (test_industry_pilots.EnergyTests.test_invalid_numeric_inputs_rejected) (value='Infinity')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 113, in test_invalid_numeric_inputs_rejected
+    evaluate_energy(spec)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_invalid_numeric_inputs_rejected (test_industry_pilots.EnergyTests.test_invalid_numeric_inputs_rejected) (value='-1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 113, in test_invalid_numeric_inputs_rejected
+    evaluate_energy(spec)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_invalid_schedule_does_not_produce_savings (test_industry_pilots.EnergyTests.test_invalid_schedule_does_not_produce_savings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 131, in test_invalid_schedule_does_not_produce_savings
+    result = evaluate_energy(spec)
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_losses_and_cycle_energy_are_accounted (test_industry_pilots.EnergyTests.test_losses_and_cycle_energy_are_accounted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 52, in test_losses_and_cycle_energy_are_accounted
+    result = evaluate_energy(energy())
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_power_constraint_independent_of_capacity (test_industry_pilots.EnergyTests.test_power_constraint_independent_of_capacity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 69, in test_power_constraint_independent_of_capacity
+    self.assertIn("CHARGE_POWER", evaluate_energy(spec)["violations"])
+                                  ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_simultaneous_charge_discharge_rejected (test_industry_pilots.EnergyTests.test_simultaneous_charge_discharge_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 79, in test_simultaneous_charge_discharge_rejected
+    self.assertIn("SIMULTANEOUS_BATTERY_FLOW", evaluate_energy(spec)["violations"])
+                                               ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_thermal_and_electric_ledgers_are_separate (test_industry_pilots.EnergyTests.test_thermal_and_electric_ledgers_are_separate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 92, in test_thermal_and_electric_ledgers_are_separate
+    result = evaluate_energy(spec)
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_unequal_end_energy_does_not_claim_comparable_savings (test_industry_pilots.EnergyTests.test_unequal_end_energy_does_not_claim_comparable_savings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 124, in test_unequal_end_energy_does_not_claim_comparable_savings
+    result = evaluate_energy(spec)
+  File "<repo>\industry_pilots\energy.py", line 4, in evaluate_energy
+    raise NotImplementedError("先实现失败行为测试，再实现能源规则")
+NotImplementedError: 先实现失败行为测试，再实现能源规则
+
+======================================================================
+ERROR: test_conversion_requires_donor_frame_evidence (test_industry_pilots.MobilityTests.test_conversion_requires_donor_frame_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 151, in test_conversion_requires_donor_frame_evidence
+    result = evaluate_mobility(spec)
+  File "<repo>\industry_pilots\mobility.py", line 4, in evaluate_mobility
+    raise NotImplementedError("先实现失败行为测试，再实现出行规则")
+NotImplementedError: 先实现失败行为测试，再实现出行规则
+
+======================================================================
+ERROR: test_higher_power_bicycle_not_silently_relabelled (test_industry_pilots.MobilityTests.test_higher_power_bicycle_not_silently_relabelled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 171, in test_higher_power_bicycle_not_silently_relabelled
+    result = evaluate_mobility(spec)
+  File "<repo>\industry_pilots\mobility.py", line 4, in evaluate_mobility
+    raise NotImplementedError("先实现失败行为测试，再实现出行规则")
+NotImplementedError: 先实现失败行为测试，再实现出行规则
+
+======================================================================
+ERROR: test_kit_document_for_other_revision_is_not_valid (test_industry_pilots.MobilityTests.test_kit_document_for_other_revision_is_not_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 159, in test_kit_document_for_other_revision_is_not_valid
+    self.assertFalse(evaluate_mobility(spec)["technical_ready"])
+                     ~~~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\mobility.py", line 4, in evaluate_mobility
+    raise NotImplementedError("先实现失败行为测试，再实现出行规则")
+NotImplementedError: 先实现失败行为测试，再实现出行规则
+
+======================================================================
+ERROR: test_motorcycle_has_separate_route (test_industry_pilots.MobilityTests.test_motorcycle_has_separate_route)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 164, in test_motorcycle_has_separate_route
+    result = evaluate_mobility(spec)
+  File "<repo>\industry_pilots\mobility.py", line 4, in evaluate_mobility
+    raise NotImplementedError("先实现失败行为测试，再实现出行规则")
+NotImplementedError: 先实现失败行为测试，再实现出行规则
+
+======================================================================
+ERROR: test_range_is_interval_not_guaranteed_mileage (test_industry_pilots.MobilityTests.test_range_is_interval_not_guaranteed_mileage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 144, in test_range_is_interval_not_guaranteed_mileage
+    result = evaluate_mobility(mobility())
+  File "<repo>\industry_pilots\mobility.py", line 4, in evaluate_mobility
+    raise NotImplementedError("先实现失败行为测试，再实现出行规则")
+NotImplementedError: 先实现失败行为测试，再实现出行规则
+
+======================================================================
+ERROR: test_range_under_required_duty_cycle_is_flagged (test_industry_pilots.MobilityTests.test_range_under_required_duty_cycle_is_flagged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 178, in test_range_under_required_duty_cycle_is_flagged
+    self.assertIn("DUTY_RANGE_SHORTFALL", evaluate_mobility(spec)["issues"])
+                                          ~~~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\mobility.py", line 4, in evaluate_mobility
+    raise NotImplementedError("先实现失败行为测试，再实现出行规则")
+NotImplementedError: 先实现失败行为测试，再实现出行规则
+
+======================================================================
+ERROR: test_unknown_market_never_becomes_road_approval (test_industry_pilots.MobilityTests.test_unknown_market_never_becomes_road_approval)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 137, in test_unknown_market_never_becomes_road_approval
+    result = evaluate_mobility(mobility())
+  File "<repo>\industry_pilots\mobility.py", line 4, in evaluate_mobility
+    raise NotImplementedError("先实现失败行为测试，再实现出行规则")
+NotImplementedError: 先实现失败行为测试，再实现出行规则
+
+======================================================================
+ERROR: test_zero_consumption_is_invalid (test_industry_pilots.MobilityTests.test_zero_consumption_is_invalid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 184, in test_zero_consumption_is_invalid
+    evaluate_mobility(spec)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\mobility.py", line 4, in evaluate_mobility
+    raise NotImplementedError("先实现失败行为测试，再实现出行规则")
+NotImplementedError: 先实现失败行为测试，再实现出行规则
+
+======================================================================
+ERROR: test_business_cycle_idempotent_replay (test_industry_pilots.SharedTests.test_business_cycle_idempotent_replay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 243, in test_business_cycle_idempotent_replay
+    cycle.advance("e1", "resource_verified", ["resource-proof"])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\industry_pilots\shared.py", line 20, in advance
+    raise NotImplementedError("业务过程规则待实现")
+NotImplementedError: 业务过程规则待实现
+
+======================================================================
+ERROR: test_business_cycle_requires_order_and_evidence (test_industry_pilots.SharedTests.test_business_cycle_requires_order_and_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 236, in test_business_cycle_requires_order_and_evidence
+    cycle.advance("e1", "reviewed", ["profit"])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\industry_pilots\shared.py", line 20, in advance
+    raise NotImplementedError("业务过程规则待实现")
+NotImplementedError: 业务过程规则待实现
+
+======================================================================
+ERROR: test_content_edit_or_market_unknown_blocks_publication (test_industry_pilots.SharedTests.test_content_edit_or_market_unknown_blocks_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 229, in test_content_edit_or_market_unknown_blocks_publication
+    self.assertFalse(publication_ready("r1", "r2", True, True, True))
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\industry_pilots\shared.py", line 11, in publication_ready
+    raise NotImplementedError("发布规则待实现")
+NotImplementedError: 发布规则待实现
+
+======================================================================
+ERROR: test_cross_currency_addition_requires_explicit_conversion (test_industry_pilots.SharedTests.test_cross_currency_addition_requires_explicit_conversion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 220, in test_cross_currency_addition_requires_explicit_conversion
+    profit_snapshot(data)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\shared.py", line 8, in profit_snapshot
+    raise NotImplementedError("利润规则待实现")
+NotImplementedError: 利润规则待实现
+
+======================================================================
+ERROR: test_duplicate_cost_id_is_rejected (test_industry_pilots.SharedTests.test_duplicate_cost_id_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 226, in test_duplicate_cost_id_is_rejected
+    profit_snapshot(data)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\shared.py", line 8, in profit_snapshot
+    raise NotImplementedError("利润规则待实现")
+NotImplementedError: 利润规则待实现
+
+======================================================================
+ERROR: test_estimates_are_not_actual_profit (test_industry_pilots.SharedTests.test_estimates_are_not_actual_profit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 214, in test_estimates_are_not_actual_profit
+    self.assertEqual(profit_snapshot(data)["status"], "estimate")
+                     ~~~~~~~~~~~~~~~^^^^^^
+  File "<repo>\industry_pilots\shared.py", line 8, in profit_snapshot
+    raise NotImplementedError("利润规则待实现")
+NotImplementedError: 利润规则待实现
+
+======================================================================
+ERROR: test_expired_resource_evidence_is_not_verified (test_industry_pilots.SharedTests.test_expired_resource_evidence_is_not_verified)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 191, in test_expired_resource_evidence_is_not_verified
+    assess_evidence([evidence], ["capacity"], "DEMO", "r1", "2026-09-18"))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\industry_pilots\shared.py", line 5, in assess_evidence
+    raise NotImplementedError("证据规则待实现")
+NotImplementedError: 证据规则待实现
+
+======================================================================
+ERROR: test_missing_cost_never_becomes_zero (test_industry_pilots.SharedTests.test_missing_cost_never_becomes_zero)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 207, in test_missing_cost_never_becomes_zero
+    result = profit_snapshot(data)
+  File "<repo>\industry_pilots\shared.py", line 8, in profit_snapshot
+    raise NotImplementedError("利润规则待实现")
+NotImplementedError: 利润规则待实现
+
+======================================================================
+ERROR: test_profit_refunds_and_costs_have_distinct_roles (test_industry_pilots.SharedTests.test_profit_refunds_and_costs_have_distinct_roles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 198, in test_profit_refunds_and_costs_have_distinct_roles
+    result = profit_snapshot(finance())
+  File "<repo>\industry_pilots\shared.py", line 8, in profit_snapshot
+    raise NotImplementedError("利润规则待实现")
+NotImplementedError: 利润规则待实现
+
+======================================================================
+ERROR: test_wrong_market_evidence_does_not_match (test_industry_pilots.SharedTests.test_wrong_market_evidence_does_not_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_industry_pilots.py", line 194, in test_wrong_market_evidence_does_not_match
+    self.assertTrue(assess_evidence([record("capacity", "OTHER")], ["capacity"],
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                    "DEMO", "r1", "2026-09-18"))
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\industry_pilots\shared.py", line 5, in assess_evidence
+    raise NotImplementedError("证据规则待实现")
+NotImplementedError: 证据规则待实现
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.038s
+
+FAILED (errors=34)

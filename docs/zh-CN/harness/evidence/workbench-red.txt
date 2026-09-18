@@ -1,0 +1,221 @@
+test_agent_cannot_approve_content_even_with_prior_operator_key (test_workbench.WorkbenchTests.test_agent_cannot_approve_content_even_with_prior_operator_key) ... ERROR
+test_captured_evidence_is_unverified_and_persisted (test_workbench.WorkbenchTests.test_captured_evidence_is_unverified_and_persisted) ... ERROR
+test_duplicate_command_replays_without_duplicate_event (test_workbench.WorkbenchTests.test_duplicate_command_replays_without_duplicate_event) ... ERROR
+test_duplicate_key_with_changed_payload_conflicts (test_workbench.WorkbenchTests.test_duplicate_key_with_changed_payload_conflicts) ... ERROR
+test_input_limits_and_invalid_actor (test_workbench.WorkbenchTests.test_input_limits_and_invalid_actor) ... ERROR
+test_messages_are_local_records_not_transmissions (test_workbench.WorkbenchTests.test_messages_are_local_records_not_transmissions) ... ERROR
+test_no_publish_payment_device_or_shell_operations (test_workbench.WorkbenchTests.test_no_publish_payment_device_or_shell_operations) ... ERROR
+test_opportunity_references_signal_and_stays_hypothesis (test_workbench.WorkbenchTests.test_opportunity_references_signal_and_stays_hypothesis) ... ERROR
+test_orphan_opportunity_and_unknown_monetization_rejected (test_workbench.WorkbenchTests.test_orphan_opportunity_and_unknown_monetization_rejected) ... ERROR
+test_resource_is_candidate_and_money_rejects_float (test_workbench.WorkbenchTests.test_resource_is_candidate_and_money_rejects_float) ... ERROR
+test_review_is_final_and_duplicate_key_replay_stable (test_workbench.WorkbenchTests.test_review_is_final_and_duplicate_key_replay_stable) ... ERROR
+test_scenario_changes_estimate_but_never_original_case (test_workbench.WorkbenchTests.test_scenario_changes_estimate_but_never_original_case) ... ERROR
+test_scenario_rejects_unknown_cost_duplicate_and_non_string_money (test_workbench.WorkbenchTests.test_scenario_rejects_unknown_cost_duplicate_and_non_string_money) ... ERROR
+test_six_cases_remain_synthetic_and_market_pending (test_workbench.WorkbenchTests.test_six_cases_remain_synthetic_and_market_pending) ... ERROR
+test_sql_injection_text_is_stored_as_data (test_workbench.WorkbenchTests.test_sql_injection_text_is_stored_as_data) ... ERROR
+test_task_requires_evidence_and_preserves_original_acceptance (test_workbench.WorkbenchTests.test_task_requires_evidence_and_preserves_original_acceptance) ... ERROR
+test_unknown_case_and_forged_evidence_status_rejected (test_workbench.WorkbenchTests.test_unknown_case_and_forged_evidence_status_rejected) ... ERROR
+test_unsafe_url_is_not_fetched_or_saved (test_workbench.WorkbenchTests.test_unsafe_url_is_not_fetched_or_saved) ... ERROR
+
+======================================================================
+ERROR: test_agent_cannot_approve_content_even_with_prior_operator_key (test_workbench.WorkbenchTests.test_agent_cannot_approve_content_even_with_prior_operator_key)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_captured_evidence_is_unverified_and_persisted (test_workbench.WorkbenchTests.test_captured_evidence_is_unverified_and_persisted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_duplicate_command_replays_without_duplicate_event (test_workbench.WorkbenchTests.test_duplicate_command_replays_without_duplicate_event)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_duplicate_key_with_changed_payload_conflicts (test_workbench.WorkbenchTests.test_duplicate_key_with_changed_payload_conflicts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_input_limits_and_invalid_actor (test_workbench.WorkbenchTests.test_input_limits_and_invalid_actor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_messages_are_local_records_not_transmissions (test_workbench.WorkbenchTests.test_messages_are_local_records_not_transmissions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_no_publish_payment_device_or_shell_operations (test_workbench.WorkbenchTests.test_no_publish_payment_device_or_shell_operations)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_opportunity_references_signal_and_stays_hypothesis (test_workbench.WorkbenchTests.test_opportunity_references_signal_and_stays_hypothesis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_orphan_opportunity_and_unknown_monetization_rejected (test_workbench.WorkbenchTests.test_orphan_opportunity_and_unknown_monetization_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_resource_is_candidate_and_money_rejects_float (test_workbench.WorkbenchTests.test_resource_is_candidate_and_money_rejects_float)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_review_is_final_and_duplicate_key_replay_stable (test_workbench.WorkbenchTests.test_review_is_final_and_duplicate_key_replay_stable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_scenario_changes_estimate_but_never_original_case (test_workbench.WorkbenchTests.test_scenario_changes_estimate_but_never_original_case)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_scenario_rejects_unknown_cost_duplicate_and_non_string_money (test_workbench.WorkbenchTests.test_scenario_rejects_unknown_cost_duplicate_and_non_string_money)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_six_cases_remain_synthetic_and_market_pending (test_workbench.WorkbenchTests.test_six_cases_remain_synthetic_and_market_pending)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_sql_injection_text_is_stored_as_data (test_workbench.WorkbenchTests.test_sql_injection_text_is_stored_as_data)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_task_requires_evidence_and_preserves_original_acceptance (test_workbench.WorkbenchTests.test_task_requires_evidence_and_preserves_original_acceptance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_unknown_case_and_forged_evidence_status_rejected (test_workbench.WorkbenchTests.test_unknown_case_and_forged_evidence_status_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_unsafe_url_is_not_fetched_or_saved (test_workbench.WorkbenchTests.test_unsafe_url_is_not_fetched_or_saved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repo>\tests\test_workbench.py", line 13, in setUp
+    self.service = BusinessService(self.path)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<repo>\smartbusiness\service.py", line 11, in __init__
+    raise NotImplementedError
+NotImplementedError
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.017s
+
+FAILED (errors=18)

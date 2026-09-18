@@ -1,0 +1,209 @@
+{
+  "id": "EN-H01",
+  "title": "家庭光储与关键负载备电",
+  "synthetic": true,
+  "industry": "energy",
+  "market": "EU_MEMBER_PENDING",
+  "market_confirmed": false,
+  "as_of": "2026-09-18",
+  "revision": "r1",
+  "data_notice": "全部为演示参数和虚构资源，不是实测、市场报价或准入结论",
+  "technical": {
+    "capacity_kwh": "15",
+    "initial_kwh": "8",
+    "reserve_kwh": "2",
+    "max_charge_kw": "5",
+    "max_discharge_kw": "5",
+    "charge_efficiency": "0.9",
+    "discharge_efficiency": "0.9",
+    "import_limit_kw": "20",
+    "export_limit_kw": "10",
+    "thermal_capacity_kwh": "8",
+    "thermal_initial_kwh": "2",
+    "demand_rate": "0",
+    "billing_period_complete": false,
+    "backup": {
+      "load_kw": "2",
+      "hours": "2",
+      "peak_kw": "4"
+    },
+    "intervals": [
+      {
+        "hours": "1",
+        "load_kw": "2",
+        "pv_kw": "6",
+        "charge_kw": "4",
+        "discharge_kw": "0",
+        "buy_rate": "0.1",
+        "sell_rate": "0.05"
+      },
+      {
+        "hours": "1",
+        "load_kw": "4",
+        "pv_kw": "0",
+        "charge_kw": "0",
+        "discharge_kw": "3.24",
+        "buy_rate": "0.3",
+        "sell_rate": "0.05"
+      }
+    ]
+  },
+  "required_reviews": [
+    "electrical_design",
+    "fire_review",
+    "grid_route"
+  ],
+  "review_evidence": [
+    {
+      "kind": "electrical_design",
+      "market": "EU_MEMBER_PENDING",
+      "revision": "r1",
+      "status": "verified",
+      "valid_until": "2027-01-01",
+      "ref": "synthetic://electrical_design"
+    },
+    {
+      "kind": "fire_review",
+      "market": "EU_MEMBER_PENDING",
+      "revision": "r1",
+      "status": "verified",
+      "valid_until": "2027-01-01",
+      "ref": "synthetic://fire_review"
+    },
+    {
+      "kind": "grid_route",
+      "market": "EU_MEMBER_PENDING",
+      "revision": "r1",
+      "status": "verified",
+      "valid_until": "2027-01-01",
+      "ref": "synthetic://grid_route"
+    }
+  ],
+  "resources": [
+    {
+      "id": "EN-H01-supplier-a",
+      "name": "虚构资源A",
+      "evidence": [
+        {
+          "kind": "capacity",
+          "market": "EU_MEMBER_PENDING",
+          "revision": "r1",
+          "status": "verified",
+          "valid_until": "2027-01-01",
+          "ref": "synthetic://capacity"
+        },
+        {
+          "kind": "quote",
+          "market": "EU_MEMBER_PENDING",
+          "revision": "r1",
+          "status": "verified",
+          "valid_until": "2027-01-01",
+          "ref": "synthetic://quote"
+        }
+      ]
+    },
+    {
+      "id": "EN-H01-supplier-b",
+      "name": "虚构资源B-报价过期",
+      "evidence": [
+        {
+          "kind": "capacity",
+          "market": "EU_MEMBER_PENDING",
+          "revision": "r1",
+          "status": "verified",
+          "valid_until": "2027-01-01",
+          "ref": "synthetic://capacity"
+        },
+        {
+          "kind": "quote",
+          "market": "EU_MEMBER_PENDING",
+          "revision": "r1",
+          "status": "verified",
+          "valid_until": "2026-01-01",
+          "ref": "synthetic://quote"
+        }
+      ]
+    }
+  ],
+  "finance": {
+    "currency": "EUR",
+    "revenue": "9000",
+    "refund": "0",
+    "revenue_status": "estimated",
+    "required_costs": [
+      "equipment",
+      "installation",
+      "freight",
+      "engineering",
+      "acquisition",
+      "warranty"
+    ],
+    "costs": [
+      {
+        "id": "cost-0",
+        "category": "equipment",
+        "kind": "direct",
+        "amount": "5000",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-1",
+        "category": "installation",
+        "kind": "direct",
+        "amount": "1200",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-2",
+        "category": "freight",
+        "kind": "direct",
+        "amount": "300",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-3",
+        "category": "engineering",
+        "kind": "direct",
+        "amount": "200",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-4",
+        "category": "acquisition",
+        "kind": "variable",
+        "amount": "300",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-5",
+        "category": "warranty",
+        "kind": "variable",
+        "amount": "300",
+        "currency": "EUR",
+        "status": "estimated"
+      }
+    ]
+  },
+  "marketing": {
+    "brief": "以可核实的客户场景和测试条件说明价值，邀请需求诊断；不承诺固定节省或保证续航。",
+    "approved_revision": "content-r1",
+    "current_revision": "content-r1",
+    "claims_verified": false
+  },
+  "trace": {
+    "signal": "EN-H01-signal",
+    "requirement": "EN-H01-requirement",
+    "business_model": "EN-H01-model",
+    "campaign": "EN-H01-campaign",
+    "quote": "EN-H01-quote",
+    "order": "EN-H01-order",
+    "delivery": "EN-H01-delivery",
+    "profit": "EN-H01-profit",
+    "review": "EN-H01-review"
+  }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.smartbusiness/
+node_modules/
+.env
+.env.*
+!.env.example
+*.sqlite3
+*.sqlite3-*

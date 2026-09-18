@@ -1,0 +1,45 @@
+test_backup_cannot_count_unavailable_grid_or_unproven_solar (test_industry_pilots.EnergyTests.test_backup_cannot_count_unavailable_grid_or_unproven_solar) ... ok
+test_complete_period_uses_actual_peak_including_charging (test_industry_pilots.EnergyTests.test_complete_period_uses_actual_peak_including_charging) ... ok
+test_efficiency_outside_bounds_rejected (test_industry_pilots.EnergyTests.test_efficiency_outside_bounds_rejected) ... ok
+test_energy_reserve_is_not_free_capacity (test_industry_pilots.EnergyTests.test_energy_reserve_is_not_free_capacity) ... ok
+test_export_limit_checked (test_industry_pilots.EnergyTests.test_export_limit_checked) ... ok
+test_heat_cannot_be_created_without_input (test_industry_pilots.EnergyTests.test_heat_cannot_be_created_without_input) ... ok
+test_incomplete_billing_period_cannot_claim_demand_savings (test_industry_pilots.EnergyTests.test_incomplete_billing_period_cannot_claim_demand_savings) ... ok
+test_invalid_numeric_inputs_rejected (test_industry_pilots.EnergyTests.test_invalid_numeric_inputs_rejected) ... ok
+test_invalid_schedule_does_not_produce_savings (test_industry_pilots.EnergyTests.test_invalid_schedule_does_not_produce_savings) ... ok
+test_losses_and_cycle_energy_are_accounted (test_industry_pilots.EnergyTests.test_losses_and_cycle_energy_are_accounted) ... ok
+test_power_constraint_independent_of_capacity (test_industry_pilots.EnergyTests.test_power_constraint_independent_of_capacity) ... ok
+test_simultaneous_charge_discharge_rejected (test_industry_pilots.EnergyTests.test_simultaneous_charge_discharge_rejected) ... ok
+test_thermal_and_electric_ledgers_are_separate (test_industry_pilots.EnergyTests.test_thermal_and_electric_ledgers_are_separate) ... ok
+test_unequal_end_energy_does_not_claim_comparable_savings (test_industry_pilots.EnergyTests.test_unequal_end_energy_does_not_claim_comparable_savings) ... ok
+test_conversion_requires_donor_frame_evidence (test_industry_pilots.MobilityTests.test_conversion_requires_donor_frame_evidence) ... ok
+test_higher_power_bicycle_not_silently_relabelled (test_industry_pilots.MobilityTests.test_higher_power_bicycle_not_silently_relabelled) ... ok
+test_kit_document_for_other_revision_is_not_valid (test_industry_pilots.MobilityTests.test_kit_document_for_other_revision_is_not_valid) ... ok
+test_motorcycle_has_separate_route (test_industry_pilots.MobilityTests.test_motorcycle_has_separate_route) ... ok
+test_range_is_interval_not_guaranteed_mileage (test_industry_pilots.MobilityTests.test_range_is_interval_not_guaranteed_mileage) ... ok
+test_range_under_required_duty_cycle_is_flagged (test_industry_pilots.MobilityTests.test_range_under_required_duty_cycle_is_flagged) ... ok
+test_unknown_market_never_becomes_road_approval (test_industry_pilots.MobilityTests.test_unknown_market_never_becomes_road_approval) ... ok
+test_zero_consumption_is_invalid (test_industry_pilots.MobilityTests.test_zero_consumption_is_invalid) ... ok
+test_business_cycle_idempotent_replay (test_industry_pilots.SharedTests.test_business_cycle_idempotent_replay) ... ok
+test_business_cycle_requires_order_and_evidence (test_industry_pilots.SharedTests.test_business_cycle_requires_order_and_evidence) ... ok
+test_content_edit_or_market_unknown_blocks_publication (test_industry_pilots.SharedTests.test_content_edit_or_market_unknown_blocks_publication) ... ok
+test_cross_currency_addition_requires_explicit_conversion (test_industry_pilots.SharedTests.test_cross_currency_addition_requires_explicit_conversion) ... ok
+test_duplicate_cost_id_is_rejected (test_industry_pilots.SharedTests.test_duplicate_cost_id_is_rejected) ... ok
+test_estimates_are_not_actual_profit (test_industry_pilots.SharedTests.test_estimates_are_not_actual_profit) ... ok
+test_expired_resource_evidence_is_not_verified (test_industry_pilots.SharedTests.test_expired_resource_evidence_is_not_verified) ... ok
+test_missing_cost_never_becomes_zero (test_industry_pilots.SharedTests.test_missing_cost_never_becomes_zero) ... ok
+test_profit_refunds_and_costs_have_distinct_roles (test_industry_pilots.SharedTests.test_profit_refunds_and_costs_have_distinct_roles) ... ok
+test_wrong_market_evidence_does_not_match (test_industry_pilots.SharedTests.test_wrong_market_evidence_does_not_match) ... ok
+test_commercial_observation_not_annualized (test_industry_scenarios.ScenarioTests.test_commercial_observation_not_annualized) ... ok
+test_complete_synthetic_cycle_requires_all_gates (test_industry_scenarios.ScenarioTests.test_complete_synthetic_cycle_requires_all_gates) ... ok
+test_conversion_missing_frame_is_blocked (test_industry_scenarios.ScenarioTests.test_conversion_missing_frame_is_blocked) ... ok
+test_expired_offer_cannot_be_selected (test_industry_scenarios.ScenarioTests.test_expired_offer_cannot_be_selected) ... ok
+test_household_costs_include_installation_and_warranty (test_industry_scenarios.ScenarioTests.test_household_costs_include_installation_and_warranty) ... ok
+test_missing_resource_evidence_stops_at_opportunity (test_industry_scenarios.ScenarioTests.test_missing_resource_evidence_stops_at_opportunity) ... ok
+test_real_transactions_not_accepted_by_demo_runner (test_industry_scenarios.ScenarioTests.test_real_transactions_not_accepted_by_demo_runner) ... ok
+test_six_cases_run_and_remain_explicitly_synthetic (test_industry_scenarios.ScenarioTests.test_six_cases_run_and_remain_explicitly_synthetic) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.006s
+
+OK

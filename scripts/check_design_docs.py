@@ -4,7 +4,8 @@ import json
 from decimal import Decimal
 
 root = Path(__file__).resolve().parents[1]
-docs = {str(p.relative_to(root)).replace('\\', '/'): p.read_text(encoding='utf-8') for p in root.rglob('*') if p.is_file() and p.suffix in {'.md', '.feature'}}
+ignored = {'node_modules', '.smartbusiness', '.git', '.venv', '__pycache__'}
+docs = {str(p.relative_to(root)).replace('\\', '/'): p.read_text(encoding='utf-8') for p in root.rglob('*') if not ignored.intersection(p.relative_to(root).parts) and p.is_file() and p.suffix in {'.md', '.feature'}}
 errors = []
 links = 0
 for name, body in docs.items():
@@ -32,7 +33,7 @@ check_ids('docs/zh-CN/03-业务需求与验收标准.md', r'^\|N(\d+)\|', 'N', 8
 check_ids('docs/zh-CN/05-DDD战略设计.md', r'^\|BC(\d+) ', 'BC', 17)
 rule_ids = check_ids('docs/zh-CN/06-DDD战术设计.md', r'BR(\d+)：', 'BR', 24)
 test_ids = check_ids('docs/zh-CN/10-TDD与质量策略.md', r'^\|AT(\d+)\|', 'AT', 23)
-check_ids('docs/zh-CN/12-架构决策记录.md', r'^\|ADR-(\d+)\|', 'ADR-', 14)
+check_ids('docs/zh-CN/12-架构决策记录.md', r'^\|ADR-(\d+)\|', 'ADR-', 15)
 check_ids('docs/zh-CN/13-研究来源与核实状态.md', r'^\|S(\d+)\|', 'S', 18)
 matrix = docs['docs/zh-CN/11-实施路线与追踪矩阵.md']
 for req in req_ids:
@@ -55,7 +56,20 @@ assert Decimal('35000') - Decimal('10000') == Decimal('25000')
 assert Decimal('150000') - Decimal('5000') - Decimal('105000') == Decimal('40000')
 assert Decimal('40000') - Decimal('10000') - Decimal('3000') == Decimal('27000')
 assert Decimal('1000') * Decimal('0.5') / Decimal('1000') == Decimal('0.5')
-report = {'文件数': len(docs), '中文专题文档': len([p for p in docs if p.startswith('docs/')]), '术语数': 144, '功能需求数': 23, '上下文数': 17, '业务规则数': 24, '验收测试规划数': 23, '行为规格场景数': len(scenarios), '相对链接数': links, '示例算术检查': '通过', '产品测试': '未实现、未执行', 'Mermaid': '已检查围栏，未执行图形渲染', '错误': errors}
+check_ids('docs/zh-CN/industries/01-行业词汇.md', r'^\|E(\d+)\|', 'E', 32)
+check_ids('docs/zh-CN/industries/01-行业词汇.md', r'^\|M(\d+)\|', 'M', 28)
+test_source = '\n'.join(p.read_text(encoding='utf-8') for p in (root / 'tests').glob('test_*.py'))
+defined_tests = set(re.findall(r'def (test_\w+)\(', test_source))
+industry_trace = docs['docs/zh-CN/industries/05-行业模型与追踪.md']
+for name in re.findall(r'\btest_\w+', industry_trace):
+    if (root / 'tests' / (name + '.py')).exists():
+        continue
+    if name not in defined_tests:
+        errors.append('行业追踪引用不存在的测试: ' + name)
+case_ids = {p.stem for p in (root / 'examples/industry').glob('*.json')}
+if case_ids != {'EN-H01', 'EN-H02', 'EN-C01', 'MO-E01', 'MO-M01', 'MO-K01'}:
+    errors.append('行业案例集合不完整')
+report = {'文档规格文件数': len(docs), '中文专题及行业文档': len([p for p in docs if p.startswith('docs/')]), '通用术语': 144, '行业术语': 60, '行业案例': len(case_ids), '行业测试定义数': len(defined_tests), '相对链接数': links, '示例算术检查': '通过', '产品测试': '本脚本不执行产品测试；行业测试需独立运行', 'Mermaid': '已检查围栏，未执行图形渲染', '错误': errors}
 print(json.dumps(report, ensure_ascii=False, indent=2))
 if errors:
     raise SystemExit(1)

@@ -1,0 +1,191 @@
+{
+  "id": "MO-M01",
+  "title": "电动摩托经销与交付",
+  "synthetic": true,
+  "industry": "mobility",
+  "market": "EU_MEMBER_PENDING",
+  "market_confirmed": false,
+  "as_of": "2026-09-18",
+  "revision": "r1",
+  "data_notice": "全部为演示参数和虚构资源，不是实测、市场报价或准入结论",
+  "technical": {
+    "kind": "emotorcycle",
+    "market": "EU_MEMBER_PENDING",
+    "revision": "r1",
+    "as_of": "2026-09-18",
+    "market_confirmed": false,
+    "rated_w": "3000",
+    "cutoff_kmh": "70",
+    "pedals": false,
+    "requirement_max_rated_w": "250",
+    "requirement_max_cutoff_kmh": "25",
+    "requirement_pedals": true,
+    "battery_wh": "3000",
+    "usable_fraction": "0.85",
+    "wh_per_km_low": "35",
+    "wh_per_km_high": "60",
+    "required_km": "40",
+    "evidence": [
+      {
+        "kind": "electrical",
+        "market": "EU_MEMBER_PENDING",
+        "revision": "r1",
+        "status": "verified",
+        "valid_until": "2027-01-01",
+        "ref": "synthetic://electrical"
+      },
+      {
+        "kind": "charger",
+        "market": "EU_MEMBER_PENDING",
+        "revision": "r1",
+        "status": "verified",
+        "valid_until": "2027-01-01",
+        "ref": "synthetic://charger"
+      },
+      {
+        "kind": "brake",
+        "market": "EU_MEMBER_PENDING",
+        "revision": "r1",
+        "status": "verified",
+        "valid_until": "2027-01-01",
+        "ref": "synthetic://brake"
+      },
+      {
+        "kind": "type_approval_route",
+        "market": "EU_MEMBER_PENDING",
+        "revision": "r1",
+        "status": "verified",
+        "valid_until": "2027-01-01",
+        "ref": "synthetic://type_approval_route"
+      },
+      {
+        "kind": "registration_route",
+        "market": "EU_MEMBER_PENDING",
+        "revision": "r1",
+        "status": "verified",
+        "valid_until": "2027-01-01",
+        "ref": "synthetic://registration_route"
+      }
+    ]
+  },
+  "required_reviews": [],
+  "review_evidence": [],
+  "resources": [
+    {
+      "id": "MO-M01-supplier-a",
+      "name": "虚构资源A",
+      "evidence": [
+        {
+          "kind": "capacity",
+          "market": "EU_MEMBER_PENDING",
+          "revision": "r1",
+          "status": "verified",
+          "valid_until": "2027-01-01",
+          "ref": "synthetic://capacity"
+        },
+        {
+          "kind": "quote",
+          "market": "EU_MEMBER_PENDING",
+          "revision": "r1",
+          "status": "verified",
+          "valid_until": "2027-01-01",
+          "ref": "synthetic://quote"
+        }
+      ]
+    },
+    {
+      "id": "MO-M01-supplier-b",
+      "name": "虚构资源B-报价过期",
+      "evidence": [
+        {
+          "kind": "capacity",
+          "market": "EU_MEMBER_PENDING",
+          "revision": "r1",
+          "status": "verified",
+          "valid_until": "2027-01-01",
+          "ref": "synthetic://capacity"
+        },
+        {
+          "kind": "quote",
+          "market": "EU_MEMBER_PENDING",
+          "revision": "r1",
+          "status": "verified",
+          "valid_until": "2026-01-01",
+          "ref": "synthetic://quote"
+        }
+      ]
+    }
+  ],
+  "finance": {
+    "currency": "EUR",
+    "revenue": "5000",
+    "refund": "0",
+    "revenue_status": "estimated",
+    "required_costs": [
+      "product",
+      "freight",
+      "inspection",
+      "acquisition",
+      "warranty"
+    ],
+    "costs": [
+      {
+        "id": "cost-0",
+        "category": "product",
+        "kind": "direct",
+        "amount": "3200",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-1",
+        "category": "freight",
+        "kind": "direct",
+        "amount": "400",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-2",
+        "category": "inspection",
+        "kind": "direct",
+        "amount": "150",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-3",
+        "category": "acquisition",
+        "kind": "variable",
+        "amount": "300",
+        "currency": "EUR",
+        "status": "estimated"
+      },
+      {
+        "id": "cost-4",
+        "category": "warranty",
+        "kind": "variable",
+        "amount": "250",
+        "currency": "EUR",
+        "status": "estimated"
+      }
+    ]
+  },
+  "marketing": {
+    "brief": "以可核实的客户场景和测试条件说明价值，邀请需求诊断；不承诺固定节省或保证续航。",
+    "approved_revision": "content-r1",
+    "current_revision": "content-r1",
+    "claims_verified": false
+  },
+  "trace": {
+    "signal": "MO-M01-signal",
+    "requirement": "MO-M01-requirement",
+    "business_model": "MO-M01-model",
+    "campaign": "MO-M01-campaign",
+    "quote": "MO-M01-quote",
+    "order": "MO-M01-order",
+    "delivery": "MO-M01-delivery",
+    "profit": "MO-M01-profit",
+    "review": "MO-M01-review"
+  }
+}
