@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "official_tool_runtime": "0.1.6-alpha.2",
+  "business_tools_exercised": 11,
+  "persisted_events": 9,
+  "idempotency": "passed",
+  "forbidden_shell": "passed",
+  "forbidden_agent_review": "passed",
+  "live_model_called": false
+}

@@ -1,0 +1,7 @@
+# 0.1.6-alpha.2 支持相对新增插件路径，基准为本 patch 所在目录。
+- insert:
+    - id: smartbusiness
+      name: './plugin.mjs'
+
+# 启动器会生成使用绝对路径的 overlay；手工加载时也优先使用绝对路径。
+# 本 patch 只注册业务插件，不声称禁用官方运行时的遥测或构成 OS 沙箱。

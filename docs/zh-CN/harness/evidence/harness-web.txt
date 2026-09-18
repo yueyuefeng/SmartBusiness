@@ -1,0 +1,6 @@
+2026-09-18 Windows; Node 24.21.0; @deepseek-ai/dsh 0.1.6-alpha.2
+Command: python -X utf8 -m smartbusiness harness
+[SmartBusiness] 已注册 11 个业务工具、中文业务提示和精确工具执行白名单。
+dsh web: http://127.0.0.1:3080/?token=<REDACTED>
+Browser: official DeepSeek Harness workspace opened; API key setup skipped.
+Live model invocation: NOT EXECUTED.

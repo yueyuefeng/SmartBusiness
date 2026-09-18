@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b3b">
+  <title>SmartBusiness · 商业闭环工作台</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到工作区</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview"><span class="brand-icon" aria-hidden="true">S<span>●</span></span><span>SmartBusiness<small>商业闭环工作台</small></span></a>
+      <div class="workspace-label">本地试点 · 双行业验证</div>
+      <nav class="navigation" role="tablist" aria-label="工作台导航" aria-orientation="vertical">
+        <button id="tab-overview" class="nav-item active" role="tab" aria-selected="true" aria-controls="overview" data-tab="overview"><span aria-hidden="true">◫</span>业务总览</button>
+        <button id="tab-discovery" class="nav-item" role="tab" aria-selected="false" aria-controls="discovery" data-tab="discovery"><span aria-hidden="true">⌕</span>情报与商机</button>
+        <button id="tab-resources" class="nav-item" role="tab" aria-selected="false" aria-controls="resources" data-tab="resources"><span aria-hidden="true">◇</span>资源匹配</button>
+        <button id="tab-marketing" class="nav-item" role="tab" aria-selected="false" aria-controls="marketing" data-tab="marketing"><span aria-hidden="true">↗</span>营销内容</button>
+        <button id="tab-crm" class="nav-item" role="tab" aria-selected="false" aria-controls="crm" data-tab="crm"><span aria-hidden="true">◎</span>客户与沟通</button>
+        <button id="tab-delivery" class="nav-item" role="tab" aria-selected="false" aria-controls="delivery" data-tab="delivery"><span aria-hidden="true">▤</span>交付与 ESG</button>
+        <button id="tab-audit" class="nav-item" role="tab" aria-selected="false" aria-controls="audit" data-tab="audit"><span aria-hidden="true">≡</span>过程审计</button>
+      </nav>
+      <div class="sidebar-note"><span class="eyebrow">从需求走向商业验证</span><p>发现需求 → 组织资源 → 验证商业模式 → 交付 → 复盘</p><span class="version-tag">DDD · 可追溯决策</span></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><div><span class="breadcrumb">工作空间 / <span id="breadcrumb-current">业务总览</span></span><h1 id="page-title">把市场信号，变成可验证的商机。</h1></div><button class="button secondary compact" id="refresh-button" type="button">刷新数据 <span aria-hidden="true">↻</span></button></header>
+      <div class="runtime-strip" aria-label="运行状态"><span class="status-tag"><i class="dot teal"></i>本地试点</span><span class="status-tag" id="model-status"><i class="dot amber"></i>模型状态待读取</span><span class="status-tag" id="publication-status"><i class="dot amber"></i>外部发布未启用</span><span class="status-caption">行业数据为合成示例，不能视为真实交易或认证。</span></div>
+      <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+      <main id="main" tabindex="-1">
+        <section id="overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview">
+          <div class="overview-intro"><div><span class="eyebrow">OPPORTUNITY TO OUTCOME</span><h2>一条完整的商业验证路径</h2><p>先有证据，再做判断。储能与电动出行共用商业流程，各自保留专业规则。</p></div><span class="pill">两个行业 · 六个合成案例</span></div>
+          <div class="metrics" id="metrics" aria-label="业务统计"></div>
+          <div class="pipeline" aria-label="商业闭环"><span>01 <b>需求情报</b></span><span>02 <b>商机建模</b></span><span>03 <b>资源整合</b></span><span>04 <b>营销转化</b></span><span>05 <b>交付复盘</b></span></div>
+          <div class="overview-grid">
+            <article class="card case-card"><div class="card-heading"><div><span class="eyebrow">行业试验场</span><h2>案例与决策检查</h2></div><span class="badge neutral">合成数据</span></div><label for="case-select">选择行业案例</label><select id="case-select"><option value="">正在读取案例…</option></select><div id="case-detail" class="case-detail"><p class="empty">正在读取行业模型…</p></div></article>
+            <div class="overview-side"><article class="card agent-card"><span class="agent-symbol" aria-hidden="true">✦</span><span class="eyebrow">DEEPSEEK HARNESS</span><h2>让智能体协助梳理，<br>让领域规则验证结果。</h2><p>通过受控业务工具录入情报、整理商机和起草内容。财务计算与行业判断由领域代码执行。</p><a class="button primary" href="http://127.0.0.1:3080/" target="_blank" rel="noopener noreferrer">打开 Harness 工作区 <span aria-hidden="true">↗</span></a><p class="fine-print">需要先单独启动 Harness：</p><code class="command">python -m smartbusiness harness</code><p class="fine-print">API 密钥与模型连接需在本机配置；本页面不会把启动入口当作已连接状态。</p></article><article class="card next-card"><span class="eyebrow">建议从这里开始</span><h3>录入一条真实市场信号</h3><p>记录来源、客户问题和原文片段，再基于证据形成商机假设。</p><button class="text-button" type="button" data-jump="discovery">开始录入情报 <span aria-hidden="true">→</span></button></article></div>
+          </div>
+          <article class="card full-card"><div class="card-heading"><div><span class="eyebrow">跨行业对照</span><h2>案例财务快照</h2></div><span class="muted">各币种独立展示，不汇总为实际利润</span></div><div id="case-table"></div></article>
+        </section>
+        <section id="discovery" class="tab-panel" role="tabpanel" aria-labelledby="tab-discovery" hidden>
+          <div class="section-intro"><h2>从来源到问题，再到价值主张</h2><p>情报保留来源；商机表达待验证的客户、价值与变现假设。</p></div>
+          <div class="two-columns">
+            <article class="card"><div class="step-heading"><span>01</span><h3>记录市场情报</h3></div><form data-operation="capture_signal"><label>关联案例<select name="case_id" data-options="cases" required></select></label><label>情报标题<input name="title" required maxlength="200" placeholder="例如：经销商询问小型商用储能备电方案"></label><label>来源链接<input name="source_url" type="url" required placeholder="https://…"></label><label>原文或访谈片段<textarea name="excerpt" required rows="3" placeholder="保留支持判断的具体表述"></textarea></label><label>客户问题<textarea name="customer_problem" required rows="3" placeholder="谁在什么场景下，遇到了什么问题？"></textarea></label><button class="button primary" type="submit">保存情报</button></form></article>
+            <article class="card"><div class="step-heading"><span>02</span><h3>形成商机假设</h3></div><form data-operation="propose_opportunity"><label>依据情报<select name="signal_id" data-options="signals" required></select></label><label>目标客户<input name="customer_segment" required maxlength="300" placeholder="例如：有备电需求的小型连锁商户"></label><label>价值主张<textarea name="value_proposition" required rows="3" placeholder="帮助客户解决什么问题，为什么愿意付费？"></textarea></label><div class="field-pair"><label>变现方式<select name="monetization"><option value="brokerage">信息与资源中介</option><option value="product">硬件或产品销售</option><option value="software">软件与数字化交付</option></select></label><label>目标市场<input name="market" required placeholder="例如：德国，待验证"></label></div><p class="form-note">商机是待验证的商业假设，保存不代表市场准入或盈利成立。</p><button class="button primary" type="submit">建立商机</button></form></article>
+          </div>
+          <article class="card full-card"><div class="card-heading"><h3>情报记录</h3><span class="muted">来源可追溯</span></div><div id="signals-list"></div></article>
+          <article class="card full-card"><div class="card-heading"><h3>商机假设</h3><span class="muted">证据驱动下一步</span></div><div id="opportunities-list"></div></article>
+        </section>
+        <section id="resources" class="tab-panel" role="tabpanel" aria-labelledby="tab-resources" hidden>
+          <div class="section-intro"><h2>建立资源池，保留核实依据</h2><p>记录供应商、服务与技术能力。新资源统一标记为待核实。</p></div>
+          <div class="form-layout"><article class="card"><h3>录入候选资源</h3><form data-operation="add_resource"><label>关联案例<select name="case_id" data-options="cases" required></select></label><label>资源名称<input name="name" required placeholder="企业、工厂或服务名称"></label><div class="field-pair"><label>资源类型<input name="kind" required placeholder="供应商 / 安装商 / 软件团队"></label><label>来源链接<input name="source_url" type="url" required placeholder="https://…"></label></div><label>能力与限制<textarea name="capabilities" required rows="4" placeholder="产品能力、交付范围、已知限制；记录待验证事项"></textarea></label><div class="field-pair"><label>报价金额<input name="quote_amount" inputmode="decimal" required pattern="[0-9]+([.][0-9]+)?" placeholder="0.00"></label><label>币种<select name="currency"><option value="CNY">CNY · 人民币</option><option value="USD">USD · 美元</option><option value="EUR">EUR · 欧元</option><option value="GBP">GBP · 英镑</option></select></label></div><p class="form-note">报价是待核实信息，不会直接计入案例利润或成为合格供应商。</p><button class="button primary" type="submit">加入资源池</button></form></article><article class="card"><div class="card-heading"><h3>候选资源</h3><span class="badge warning">核实前不可作为履约依据</span></div><div id="resources-list"></div></article></div>
+        </section>
+        <section id="marketing" class="tab-panel" role="tabpanel" aria-labelledby="tab-marketing" hidden>
+          <div class="section-intro"><h2>内容制作与内部评审</h2><p>围绕商机起草内容，记录评审决定。内部通过不代表已发布，也不替代行业合规核实。</p></div>
+          <div class="form-layout"><article class="card"><h3>制作内容草稿</h3><form data-operation="draft_content"><label>关联商机<select name="opportunity_id" data-options="opportunities" required></select></label><label>目标渠道<input name="channel" required placeholder="例如：官网 / 微信 / LinkedIn"></label><label>标题<input name="title" required maxlength="200" placeholder="内容标题"></label><label>正文<textarea name="body" required rows="8" placeholder="面向哪个客户问题？哪些表述需要证据支持？"></textarea></label><p class="form-note">这里保存本地草稿，不会向任何社交平台发送内容。</p><button class="button primary" type="submit">保存草稿</button></form></article><article class="card"><div class="card-heading"><h3>内容与评审</h3><span class="badge neutral">外部发布关闭</span></div><div id="contents-list"></div></article></div>
+        </section>
+        <section id="crm" class="tab-panel" role="tabpanel" aria-labelledby="tab-crm" hidden>
+          <div class="section-intro"><h2>客户档案与沟通记录</h2><p>当前统一管理本地沟通记录；微信、WhatsApp、邮件等真实收发连接器尚未接通。</p></div>
+          <div class="two-columns"><article class="card"><h3>建立客户档案</h3><form data-operation="add_contact"><div class="field-pair"><label>联系人<input name="name" required placeholder="联系人姓名"></label><label>公司<input name="company" required placeholder="公司名称"></label></div><label>沟通渠道<input name="channel" required placeholder="例如：邮件 / WhatsApp / 线下访谈"></label><label>渠道标识<input name="external_ref" required placeholder="邮箱、公开账号或内部引用"></label><button class="button primary" type="submit">保存客户</button></form></article><article class="card"><h3>记录一次沟通</h3><form data-operation="record_note"><div class="field-pair"><label>联系人<select name="contact_id" data-options="contacts" required></select></label><label>记录类型<select name="direction"><option value="inbound">客户来询记录</option><option value="outbound">已发生的跟进记录</option><option value="internal">内部备注</option></select></label></div><label>沟通内容<textarea name="body" required rows="5" placeholder="记录问题、承诺、下一步；不会实际发送消息"></textarea></label><p class="form-note">这是沟通记录功能，保存不会触达客户。</p><button class="button primary" type="submit">保存记录</button></form></article></div>
+          <article class="card full-card"><h3>客户列表</h3><div id="contacts-list"></div></article><article class="card full-card"><h3>沟通时间线</h3><div id="notes-list"></div></article>
+        </section>
+        <section id="delivery" class="tab-panel" role="tabpanel" aria-labelledby="tab-delivery" hidden>
+          <div class="section-intro"><h2>用可验收的任务推动交付</h2><p>统一跟踪软件、硬件、合同与 ESG 工作，并保留执行结果的证据引用。</p></div>
+          <div class="form-layout"><article class="card"><h3>创建交付任务</h3><form data-operation="create_task"><label>关联商机<select name="opportunity_id" data-options="opportunities" required></select></label><label>工作领域<select name="kind"><option value="software">软件开发</option><option value="hardware">硬件设计与验证</option><option value="contract">商业合同</option><option value="esg">ESG 证据与报告</option></select></label><label>任务标题<input name="title" required placeholder="例如：收集电池产品材料与供应链证据"></label><label>验收标准<textarea name="acceptance" required rows="6" placeholder="什么结果代表完成？需要哪些证据或测试？"></textarea></label><p class="form-note">任务完成记录不等于合同已签署、硬件获认证或 ESG 报告获鉴证。</p><button class="button primary" type="submit">创建任务</button></form></article><article class="card"><div class="card-heading"><h3>任务与结果</h3><span class="muted">证据伴随交付</span></div><div id="tasks-list"></div></article></div>
+        </section>
+        <section id="audit" class="tab-panel" role="tabpanel" aria-labelledby="tab-audit" hidden><div class="section-intro"><h2>让每次业务变更都有记录</h2><p>查看本地指令产生的事件。重复提交使用幂等键识别，事件记录用于回看操作过程。</p></div><article class="card"><div class="card-heading"><h3>操作事件</h3><span id="event-count" class="badge neutral">0 条</span></div><div id="events-list"></div></article></section>
+      </main>
+      <footer>SmartBusiness · 中文领域工作台 <span>合成行业试点 · 真实业务需要逐项验证</span></footer>
+    </div>
+  </div>
+</body>
+</html>
